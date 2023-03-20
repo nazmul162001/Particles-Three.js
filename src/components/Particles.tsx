@@ -128,8 +128,9 @@ const Particles = () => {
 
       for (let i = 0; i < count; i++) {
         let i3 = i * 3
-
+        //@ts-ignore
         const x = particlesGeometry.attributes.position.array[i3]
+        //@ts-ignore
         particlesGeometry.attributes.position.array[i3 + 1] = Math.sin(
           elapsedTime + x
         )
